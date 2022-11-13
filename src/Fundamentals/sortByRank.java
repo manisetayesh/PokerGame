@@ -1,5 +1,7 @@
+package Fundamentals;
+
 public class sortByRank {
-    /*Method name: sortByRank
+    /*Method name: Fundamentals.sortByRank
      * Author: Mani setayesh
      * Description: Sorts a hand by the rank values of its cards (2-14)
      * Input: A hand of 7-cards

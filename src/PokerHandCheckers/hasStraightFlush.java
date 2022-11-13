@@ -1,12 +1,17 @@
-public class hasStraightFlush {
+package PokerHandCheckers;
+import Fundamentals.Card;
+import Fundamentals.sortByRank;
+import Fundamentals.sortBySuit;
 
-    //Please check the hasStraight and hasFlush methods first. This would make sense more then.
-    public static boolean hasStraightFlush(Card[] h) {
+public class hasStraightFlush extends Checker {
+
+    //Please check the PokerHandCheckers.hasStraight and PokerHandCheckers.hasFlush methods first. This would make sense more then.
+    public static boolean check(Card[] h) {
 
         int testRank,i;
         new sortBySuit(h);
 
-        //This is, effectively, the has Straight method woven in with the hasFlush method
+        //This is, effectively, the has Straight method woven in with the PokerHandCheckers.hasFlush method
 
         //Check for where the flush is
         if(h[0].suit() == h[4].suit()) {
@@ -14,7 +19,7 @@ public class hasStraightFlush {
             //Sort by rank and see if there is a straight there
             new sortByRank(h);
 
-            //This code was ripped from the hasStraight method (slightly modified)
+            //This code was ripped from the PokerHandCheckers.hasStraight method (slightly modified)
             if (h[4].rank() == 14){
 
                 boolean a = h[0].rank() == 2 && h[1].rank() == 3 && h[2].rank() == 4 && h[3].rank() == 5 ;

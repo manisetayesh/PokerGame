@@ -1,6 +1,11 @@
-public class hasRoyalFlush {
+package PokerHandCheckers;
+import Fundamentals.Card;
+import Fundamentals.sortByRank;
+import Fundamentals.sortBySuit;
 
-    public static boolean hasRoyalFlush(Card[] h) {
+public class hasRoyalFlush extends Checker {
+
+    public static boolean check(Card[] h) {
 
         new sortBySuit(h);
         boolean a1;

@@ -1,3 +1,7 @@
+import Fundamentals.Card;
+import Fundamentals.Deck;
+import PokerHandCheckers.*;
+
 public class Simulator {
 
 	public static int[] hands = new int[10];
@@ -16,46 +20,46 @@ public class Simulator {
 	   			hand[i] = a.deal();
 	   		}
 	   		
-	   		if(hasRoyalFlush.hasRoyalFlush(hand)) {
+	   		if(hasRoyalFlush.check(hand)) {
 	   			hands[0]++;
 	   		}
 	   	
-	   		else if (hasStraightFlush.hasStraightFlush(hand)) {
+	   		else if (hasStraightFlush.check(hand)) {
 	   			hands[1]++;
 	   		}
 	      
 	   		//Checks if hand has a 4-of-a-kind, returns value
-	   		else if (has4OfAKind.has4OfAKind(hand)) {
+	   		else if (has4OfAKind.check(hand)) {
 	   			hands[2]++;
 	   		}
 	      
 	   		//Check if hand has a full house, returns value
-	   		else if (hasFullHouse.hasFullHouse(hand)) {
+	   		else if (hasFullHouse.check(hand)) {
 	   			hands[3]++;
 	   		}
 	      
 	   		//check if the hand has a flush, returns value
-	   		else if (hasFlush.hasFlush(hand)) {
+	   		else if (hasFlush.check(hand)) {
 	   			hands[4]++;
 	   		}
 	      
 	   		//check if the hand has a straight, returns value
-	   		else if (hasStraight.hasStraight(hand)) {
+	   		else if (hasStraight.check(hand)) {
 	   			hands[5]++;
 	   		}
 	      
 	   		//Three-of-a-kind (also known as set)
-	   		else if (has3OfAKind.has3OfAKind(hand)) {
+	   		else if (has3OfAKind.check(hand)) {
 	   			hands[6]++;
 	   		}
 	      
 	   		//Two-pairs
-	   		else if (has2pairs.has2pairs(hand)) {
+	   		else if (has2pairs.check(hand)) {
 	   			hands[7]++;
 	   		}
 	      
 	   		//One pair
-	   		else if (hasPair.hasPair(hand)) {
+	   		else if (hasPair.check(hand)) {
 	   			hands[8]++;
 	   		}
 	      

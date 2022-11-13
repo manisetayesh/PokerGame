@@ -1,4 +1,8 @@
-public class has4OfAKind {
+package PokerHandCheckers;
+import Fundamentals.Card;
+import Fundamentals.sortByRank;
+
+public class has4OfAKind extends Checker {
 
     /*Method name: has4s
      * Author: Mani setayesh
@@ -6,7 +10,7 @@ public class has4OfAKind {
      * Input: A hand of 7-cards
      * Output: Boolean value
      */
-    public static boolean has4OfAKind(Card[] h) {
+    public static boolean check(Card[] h) {
 
         //sort by rank
         boolean a1, a2, a3, a4;

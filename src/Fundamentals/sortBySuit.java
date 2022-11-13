@@ -1,3 +1,5 @@
+package Fundamentals;
+
 public class sortBySuit {
     public sortBySuit(Card[] h) {
         int i, j, min;

@@ -1,12 +1,16 @@
-public class hasStraight {
+package PokerHandCheckers;
+import Fundamentals.Card;
+import Fundamentals.sortByRank;
 
-    /*Method name: hasStraight
+public class hasStraight extends Checker {
+
+    /*Method name: PokerHandCheckers.hasStraight
      * Author: Mani setayesh
      * Description: Checks hand if it has a straight
      * Input: A hand of 7-cards
      * Output: Boolean value
      */
-    public static boolean hasStraight(Card[] h) {
+    public static boolean check(Card[] h) {
 
         //sort hand by rank, set up integers
         int testRank,i;

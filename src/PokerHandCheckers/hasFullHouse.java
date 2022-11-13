@@ -1,11 +1,14 @@
-public class hasFullHouse {
+package PokerHandCheckers;
+import Fundamentals.Card;
+import Fundamentals.sortByRank;
+public class hasFullHouse extends Checker {
 
 
     //almost same deal as the 4s, with a little twist
-    public static boolean hasFullHouse(Card[] h) {
+    public static boolean check(Card[] h) {
 
         //Make sure the 4s have failed (there isn't a four-of-a-kind)
-        if(has4OfAKind.has4OfAKind(h)) {
+        if(has4OfAKind.check(h)) {
             return false;
         }
         //sort by rank and go through the options

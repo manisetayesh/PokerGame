@@ -1,12 +1,15 @@
-public class hasFlush {
+package PokerHandCheckers;
+import Fundamentals.Card;
+import Fundamentals.sortBySuit;
+public class hasFlush extends Checker {
 
-    /*Method name: hasFlush
+    /*Method name: PokerHandCheckers.hasFlush
      * Author: Mani setayesh
      * Description: Checks hand if it has a flush
      * Input: A hand of 7-cards
      * Output: Boolean value
      */
-    public static boolean hasFlush(Card[] h) {
+    public static boolean check(Card[] h) {
 
         //Sort the hand by suit
         boolean hasflush = false;

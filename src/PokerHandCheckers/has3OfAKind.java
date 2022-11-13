@@ -1,9 +1,12 @@
-public class has3OfAKind {
+package PokerHandCheckers;
+import Fundamentals.Card;
+import Fundamentals.sortByRank;
+public class has3OfAKind extends Checker {
 
-    public static boolean has3OfAKind(Card[] h) {
+    public static boolean check(Card[] h) {
 
         //Make sure no four-of-a-kind, and no full house
-        if (has4OfAKind.has4OfAKind(h) || hasFullHouse.hasFullHouse(h) ) {
+        if (has4OfAKind.check(h) || hasFullHouse.check(h) ) {
             return false;
         }
 

@@ -1,10 +1,15 @@
-public class hasPair {
+package PokerHandCheckers;
 
-    public static boolean hasPair(Card[] h) {
+import Fundamentals.Card;
+import Fundamentals.sortByRank;
+
+public class hasPair extends Checker {
+
+    public static boolean check(Card[] h) {
 
         boolean a1,a2,a3,a4,a5,a6;
-        if (has4OfAKind.has4OfAKind(h) || hasFullHouse.hasFullHouse(h) ||
-                has3OfAKind.has3OfAKind(h) || has2pairs.has2pairs(h)) {
+        if (has4OfAKind.check(h) || hasFullHouse.check(h) ||
+                has3OfAKind.check(h) || has2pairs.check(h)) {
             return false;
         }
         new sortByRank(h);
