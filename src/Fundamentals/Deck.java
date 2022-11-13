@@ -17,7 +17,7 @@ public class Deck{
 	 * of the current card in possession. This will help eliminate recounting a card.
 	 */
 	public static final int Cards = 52;
-	private Card[] deckofcards;
+	private final Card[] deckofcards;
 	private int currentCard;
 	
 	/***************
@@ -31,7 +31,7 @@ public class Deck{
 		int i = 0;
 		
 		/*Going through suits from lowest value to highest value*/
-		for(int suit = Card.DIAMOND; suit <= Card.SPADE; suit++) {
+		for(int suit = 1; suit <= 4; suit++) {
 			
 			/*Going through the ranks of a suit, from Ace to King*/
 			for (int rank = 1; rank <= 13; rank++) {
